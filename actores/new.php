@@ -24,6 +24,6 @@ else{
     ];
     $json=json_encode($response);
 }
-header('Content-Type: application/json');
+include('../envio.php');
 echo $json;
 ?>

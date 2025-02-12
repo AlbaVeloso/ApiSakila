@@ -5,9 +5,6 @@ $result=$conexion->query($sql);
 $datos=$result->fetchAll(PDO::FETCH_ASSOC);
 
 $json=json_encode($datos);
-
-
-
-header('Content-Type: application/json');
+include("../envio.php");
 echo $json;
 ?>
